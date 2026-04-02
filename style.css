@@ -117,3 +117,25 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* ── Article pages ── */
+.back {
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+}
+
+article h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+article p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+article p:last-child {
+  margin-bottom: 0;
+}
