@@ -31,11 +31,24 @@ body {
 }
 
 main {
-  max-width: 540px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 6rem;
+  padding: 3rem 1.5rem 4rem;
 }
 
+/* ── Two-column layout ── */
+.page {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.primary {
+  max-width: 540px;
+}
+
+/* ── Header ── */
 h1 {
   font-size: 1.3rem;
   font-weight: 600;
@@ -45,15 +58,14 @@ h1 {
 .bio {
   color: var(--text-muted);
   font-size: 0.95rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 1.2rem;
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
 }
 
@@ -67,22 +79,18 @@ h1 {
   text-decoration: underline;
 }
 
+/* ── Sections ── */
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 h2 {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  margin-bottom: 0.6rem;
-}
-
-h3 {
-  font-size: 0.8rem;
-  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: var(--text-muted);
-  margin-top: 1.2rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 section > p {
@@ -91,12 +99,14 @@ section > p {
   color: var(--text);
 }
 
+/* ── Lists ── */
 ul {
   list-style: none;
 }
 
 ul li {
   padding: 0.2rem 0;
+  font-size: 0.9rem;
 }
 
 ul li a {
@@ -118,6 +128,46 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ── Sidebar ── */
+.sidebar {
+  padding-top: 0.2rem;
+}
+
+.sidebar h2 {
+  font-size: 0.75rem;
+}
+
+.sidebar ul li {
+  padding: 0.15rem 0;
+  font-size: 0.82rem;
+}
+
+.sidebar ul li a {
+  font-size: 0.82rem;
+}
+
+.sidebar section > p {
+  font-size: 0.82rem;
+}
+
+/* ── Mobile: stack ── */
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .primary {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    padding-top: 0;
+    border-top: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
+    padding-top: 1.5rem;
+  }
+}
+
 /* ── Article pages ── */
 .back {
   margin-bottom: 2rem;
@@ -134,6 +184,7 @@ article p {
   font-size: 0.95rem;
   line-height: 1.75;
   margin-bottom: 1rem;
+  max-width: 540px;
 }
 
 article p:last-child {
