@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adeniyi Adebayo</title>
+    <link>https://niyiadebayo.com</link>
+    <description>Writing on cities, marketplaces, and emerging markets.</description>
+    <language>en</language>
+    <atom:link href="https://niyiadebayo.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What We Get Wrong About Cities</title>
+      <link>https://niyiadebayo.com/cities.html</link>
+      <guid>https://niyiadebayo.com/cities.html</guid>
+      <description>City GDP is the real signal, not country GDP. Why venture capital in emerging markets is misallocated by population thinking, and what Abidjan reveals about the actual math.</description>
+    </item>
+    <item>
+      <title>The Density Dividend</title>
+      <link>https://niyiadebayo.com/density-dividend.html</link>
+      <guid>https://niyiadebayo.com/density-dividend.html</guid>
+      <description>Market density in emerging market cities follows power law dynamics. Why Geoffrey West's scaling laws, Glaeser's agglomeration economics, and Jane Jacobs's street-level conditions explain where marketplace businesses actually compound.</description>
+    </item>
+    <item>
+      <title>The Informal Stack</title>
+      <link>https://niyiadebayo.com/informal-stack.html</link>
+      <guid>https://niyiadebayo.com/informal-stack.html</guid>
+      <description>The informal economy is not a problem to formalize. It is an operating system with its own logic. De Soto's dead capital, Scott's metis, and what marketplace platforms actually build on top of.</description>
+    </item>
+    <item>
+      <title>The Leapfrog That Isn't</title>
+      <link>https://niyiadebayo.com/leapfrog.html</link>
+      <guid>https://niyiadebayo.com/leapfrog.html</guid>
+      <description>Physical AI in emerging markets won't follow the mobile phone playbook. Why labor cost thresholds, city structure, and demographic scale determine what gets skipped and what doesn't.</description>
+    </item>
+    <item>
+      <title>Entropy and Marketplaces</title>
+      <link>https://niyiadebayo.com/entropy-and-marketplaces.html</link>
+      <guid>https://niyiadebayo.com/entropy-and-marketplaces.html</guid>
+      <description>Why most marketplace disruption destroys the resources it needs to sustain itself, and how to design for reversible entropy.</description>
+    </item>
+    <item>
+      <title>The First 72 Hours in a New City</title>
+      <link>https://niyiadebayo.com/first-72-hours.html</link>
+      <guid>https://niyiadebayo.com/first-72-hours.html</guid>
+      <description>The checklist for assessing a marketplace opportunity on the ground. Three things matter in the first 72 hours.</description>
+    </item>
+    <item>
+      <title>The Financing Loop</title>
+      <link>https://niyiadebayo.com/financing-loop.html</link>
+      <guid>https://niyiadebayo.com/financing-loop.html</guid>
+      <description>How vehicles, data, and banks create a self-reinforcing system in emerging market transport.</description>
+    </item>
+    <item>
+      <title>Boring Businesses That Print Money</title>
+      <link>https://niyiadebayo.com/boring-businesses.html</link>
+      <guid>https://niyiadebayo.com/boring-businesses.html</guid>
+      <description>Pharmacies, BNPL, and the economics of institutional vacuums in emerging markets.</description>
+    </item>
+    <item>
+      <title>Addis Ababa</title>
+      <link>https://niyiadebayo.com/addis-ababa.html</link>
+      <guid>https://niyiadebayo.com/addis-ababa.html</guid>
+      <description>The city most people in emerging market tech are missing. Four things converging.</description>
+    </item>
+    <item>
+      <title>Know Thyself</title>
+      <link>https://niyiadebayo.com/know-thyself.html</link>
+      <guid>https://niyiadebayo.com/know-thyself.html</guid>
+      <description>Market density, monopoly thinking, and the math of venture ambition.</description>
+    </item>
+  </channel>
+</rss>
