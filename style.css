@@ -49,6 +49,15 @@ main {
 }
 
 /* ── Header ── */
+.headshot {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  margin-bottom: 0.8rem;
+}
+
 h1 {
   font-size: 1.3rem;
   font-weight: 600;
@@ -178,6 +187,16 @@ article h1 {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+}
+
+article h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 article p {
