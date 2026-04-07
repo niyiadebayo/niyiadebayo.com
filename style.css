@@ -50,42 +50,52 @@ main {
 
 /* ── Header ── */
 .headshot {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
 }
 
 .bio {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
   margin-bottom: 0.8rem;
+}
+
+.bio a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--text-muted) 40%, transparent);
+  text-underline-offset: 2px;
+}
+
+.bio a:hover {
+  color: var(--link);
 }
 
 .links {
   display: flex;
   gap: 1.2rem;
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
+  margin-bottom: 2.5rem;
 }
 
 .links a {
-  font-size: 0.9rem;
-  color: var(--link);
+  font-size: 0.82rem;
+  color: var(--text-muted);
   text-decoration: none;
 }
 
 .links a:hover {
-  text-decoration: underline;
+  color: var(--link);
 }
 
 /* ── Sections ── */
@@ -94,18 +104,23 @@ section {
 }
 
 h2 {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   color: var(--text-muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 section > p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   color: var(--text);
+}
+
+#writing ul li {
+  padding: 0.35rem 0;
+  line-height: 1.5;
 }
 
 /* ── Lists ── */
@@ -114,7 +129,7 @@ ul {
 }
 
 ul li {
-  padding: 0.2rem 0;
+  padding: 0.25rem 0;
   font-size: 0.9rem;
 }
 
@@ -126,6 +141,15 @@ ul li a {
 
 ul li a:hover {
   text-decoration: underline;
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.desc::before {
+  content: "— ";
 }
 
 a {
