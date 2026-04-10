@@ -111,12 +111,6 @@ h2 {
   margin-bottom: 0.6rem;
 }
 
-section > p {
-  font-size: 0.85rem;
-  line-height: 1.7;
-  color: var(--text);
-}
-
 #writing ul li {
   padding: 0.35rem 0;
   line-height: 1.5;
@@ -165,20 +159,12 @@ a:hover {
   padding-top: 0.2rem;
 }
 
-.sidebar h2 {
-  font-size: 0.75rem;
-}
-
 .sidebar ul li {
   padding: 0.15rem 0;
   font-size: 0.82rem;
 }
 
 .sidebar ul li a {
-  font-size: 0.82rem;
-}
-
-.sidebar section > p {
   font-size: 0.82rem;
 }
 
@@ -194,7 +180,6 @@ a:hover {
   }
 
   .sidebar {
-    padding-top: 0;
     border-top: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
     padding-top: 1.5rem;
   }
@@ -227,10 +212,6 @@ article p {
   line-height: 1.75;
   margin-bottom: 1rem;
   max-width: 540px;
-}
-
-article p:last-child {
-  margin-bottom: 0;
 }
 
 /* ── Footnotes ── */
