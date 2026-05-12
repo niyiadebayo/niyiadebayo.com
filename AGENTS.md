@@ -103,7 +103,7 @@ The `index.html` writing list is not chronological. It is a thesis arc:
 
 1. **Thesis** — cities, density-dividend
 2. **Ground-level** — first-72-hours, pricing-as-language
-3. **Systems** — second-player, no-float-expected, financing-loop, informal-stack, inflations-uneven-tax, boring-businesses
+3. **Systems** — second-player, no-float-expected, distribution-stack, financing-loop, informal-stack, inflations-uneven-tax, boring-businesses
 4. **Macro** — entropy-and-marketplaces, addis-ababa, leapfrog
 5. **Personal** — know-thyself
 
@@ -122,6 +122,8 @@ Avoid re-citing. When a thinker appears in more than one article, state the find
 | James Scott | informal-stack | Metis, thin simplifications, legibility |
 | Acemoglu & Robinson | informal-stack | Extractive vs inclusive institutions |
 | Thomas Piketty | inflations-uneven-tax | r > g amplified by FX + urbanization in EMs |
+| Marcel Fafchamps | distribution-stack | Relational contracting, <5% use courts in SSA |
+| Jack & Suri | distribution-stack | Nonlinear agent density and M-PESA adoption |
 
 Add a row here whenever a new thinker is cited heavily for the first time.
 
