@@ -144,6 +144,7 @@ Before starting a new essay session:
 - **Headshot path:** Uses absolute `/headshot.jpg`. Does not render from `file://` URLs, works on GitHub Pages.
 - **No JS:** Site is pure HTML/CSS. No analytics, no interactivity. The only JS in the repo is the one-line Copy Link button.
 - **No auto-build:** `feed.xml` and `sitemap.xml` are hand-maintained. There is no generator.
+- **Share row must wrap:** The `.share` footer (X / LinkedIn / Copy link) is a flexbox and must keep `flex-wrap: wrap`. Without it the row fits at &ge;360px but the third button overflows the right edge on the smallest phones (&le;~340px, e.g. the original iPhone SE). Verified at 320px after the fix: it drops to a second line cleanly. The style is shared across every article footer, so test footer width at 320px when touching `.share`.
 
 ## Updating this file
 
