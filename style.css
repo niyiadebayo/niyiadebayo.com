@@ -246,7 +246,9 @@ sup a {
 .share {
   margin-top: 2.5rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  row-gap: 0.5rem;
 }
 
 .share a, .share button {
