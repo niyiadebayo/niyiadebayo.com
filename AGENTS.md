@@ -22,6 +22,18 @@ Adeniyi writes like an operator who has been in the markets he describes. Hard r
 10. **Vehicle and brand vocabulary.** Use globally-recognized brands when they fit: **Bajaj Boxer, Honda, Suzuki** for motorcycles. **Toyota Vitz, Toyota Corolla** for cars. Avoid local-only brands (Apsonic, Haojue) unless the point is specifically about the local commercial stock — and even then, lead with the recognizable brand.
 11. **Vocabulary nits.** *Credit score* (not bureau score). *Farmgate price* (not producer price) for cocoa. *Cedi* lowercase except at sentence start.
 
+## Operator worldview (keep essays coherent with it)
+
+Adeniyi writes from a consistent strategic position, stated plainly in how he frames the work publicly (e.g. Bloomberg, May 2026: "a lot of capital chasing the same goal... a race to the bottom"; "we don't work directly with drivers... we work with transport operators"). New essays should reinforce these convictions, not contradict them. Keep the conviction, vary the evidence:
+
+- **Density over headcount; secondary cities over the top four.** Capital piles into Lagos, Cairo, Johannesburg, and Nairobi and bids itself into a race to the bottom. The opening is the secondary cities the top four crowd out. (Primary: cities, density-dividend, second-player.)
+- **Work through local operators, not gig workers directly.** Partnering with transport operators lowers subsidy burn and builds on trust that already exists. (Primary: distribution-stack, financing-loop, no-float-expected.)
+- **Mobility is the wedge; the ecosystem is the prize.** One daily-use service is the entry point, then transport, commerce, payments, and credit connect into a platform people depend on. (Primary: identity-premium, distribution-stack.)
+- **Instrument the informal economy, don't formalize it.** Add the data layer that makes informal assets and actors legible to capital without stripping the metis that makes them work. (Primary: informal-stack, financing-loop.)
+- **Subsidy is a tax on getting the model wrong.** Daily cash, dense agent meshes, and local operators beat burning capital to paper over a model that fights the market. (Primary: no-float-expected.)
+
+His public register is blunt and operator-first ("we've barely started"), the same voice rule 8 asks for: the markets teach, the operator learns.
+
 ## Article HTML template
 
 Every article starts with this exact head structure (copy from the most recent article — currently `inflations-uneven-tax.html`):
