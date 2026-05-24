@@ -124,6 +124,7 @@ Avoid re-citing. When a thinker appears in more than one article, state the find
 | Thomas Piketty | inflations-uneven-tax | r > g amplified by FX + urbanization in EMs |
 | Marcel Fafchamps | distribution-stack | Relational contracting, <5% use courts in SSA |
 | Jack & Suri | distribution-stack | Nonlinear agent density and M-PESA adoption |
+| W. Brian Arthur | identity-premium | Increasing returns, lock-in, path dependence |
 
 Add a row here whenever a new thinker is cited heavily for the first time.
 
