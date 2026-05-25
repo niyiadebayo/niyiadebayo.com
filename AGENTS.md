@@ -137,6 +137,8 @@ Avoid re-citing. When a thinker appears in more than one article, state the find
 | Marcel Fafchamps | distribution-stack | Relational contracting, <5% use courts in SSA |
 | Jack & Suri | distribution-stack | Nonlinear agent density and M-PESA adoption |
 | W. Brian Arthur | identity-premium | Increasing returns, lock-in, path dependence |
+| Kingsley Davis | the-fiftieth-user | Urban transition, attenuated S-curve |
+| Gollin, Jedwab & Vollrath | the-fiftieth-user | Consumption vs production cities, urbanization without industrialization |
 
 Add a row here whenever a new thinker is cited heavily for the first time.
 
