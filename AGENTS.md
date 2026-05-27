@@ -157,7 +157,7 @@ Before starting a new essay session:
 
 - **Preview server:** macOS App Sandbox prevents Claude Preview's python3 from accessing `~/Documents`. The author opens files directly in a browser or runs a server from their terminal.
 - **Headshot path:** Uses absolute `/headshot.jpg`. Does not render from `file://` URLs, works on GitHub Pages.
-- **No JS:** Site is pure HTML/CSS. No analytics, no interactivity. The only JS in the repo is the one-line Copy Link button.
+- **No JS framework:** Site is pure HTML/CSS with no interactivity to speak of. Two small scripts only: the one-line Copy Link button on each article, and the cookieless **Cloudflare Web Analytics** beacon on every page (`data-cf-beacon` token `2859…1538`). Traffic is read at dash.cloudflare.com &rarr; Web Analytics &rarr; niyiadebayo.com (visits, page views, per-article top-path hits, referrers). It is JS-based so it undercounts script/ad-blocked visitors, and GitHub Pages exposes no server logs. Do not add further JS.
 - **No auto-build:** `feed.xml` and `sitemap.xml` are hand-maintained. There is no generator.
 - **Share row must wrap:** The `.share` footer (X / LinkedIn / Copy link) is a flexbox and must keep `flex-wrap: wrap`. Without it the row fits at &ge;360px but the third button overflows the right edge on the smallest phones (&le;~340px, e.g. the original iPhone SE). Verified at 320px after the fix: it drops to a second line cleanly. The style is shared across every article footer, so test footer width at 320px when touching `.share`.
 
