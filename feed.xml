@@ -5,8 +5,14 @@
     <link>https://niyiadebayo.com</link>
     <description>Writing on cities, marketplaces, and emerging markets.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 25 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://niyiadebayo.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Rails Before Marketplaces</title>
+      <link>https://niyiadebayo.com/rails-before-marketplaces.html</link>
+      <guid>https://niyiadebayo.com/rails-before-marketplaces.html</guid>
+      <description>Marketplaces of convenience cannot come before marketplaces of necessity. In emerging markets infrastructure leapfrogs but behavior does not, and that fixes the order you can build in.</description>
+    </item>
     <item>
       <title>The Fiftieth User</title>
       <link>https://niyiadebayo.com/the-fiftieth-user.html</link>
