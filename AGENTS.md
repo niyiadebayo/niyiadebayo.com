@@ -111,15 +111,15 @@ Every new article, every time:
 
 ## Thematic arc in the index
 
-The `index.html` writing list is not chronological. It is a thesis arc:
+The `index.html` writing list is not chronological. It is a thesis arc. As of May 2026 the arc is **rendered on the page**: each bucket has a visible `<h2 class="arc">` label (small uppercase muted subhead, styled in `style.css` under "Writing: thematic arc group labels"). The list is split into one `<ul>` per bucket. This replaced the single flat `<ul>`, which had grown to 18 items and read as an undifferentiated wall.
 
-1. **Thesis** — cities, density-dividend
-2. **Ground-level** — first-72-hours, pricing-as-language
-3. **Systems** — second-player, no-float-expected, distribution-stack, financing-loop, informal-stack, inflations-uneven-tax, boring-businesses
-4. **Macro** — entropy-and-marketplaces, addis-ababa, leapfrog
+1. **Thesis** — cities, density-dividend, the-fiftieth-user
+2. **Ground level** — first-72-hours, pricing-as-language
+3. **Systems** — second-player, no-float-expected, distribution-stack, identity-premium, financing-loop, informal-stack, inflations-uneven-tax, boring-businesses
+4. **Macro** — entropy-and-marketplaces, rails-before-marketplaces, addis-ababa, leapfrog
 5. **Personal** — know-thyself
 
-When adding a new article, slot it by theme, not date. The reader should be able to read top-to-bottom as a developing argument.
+When adding a new article, slot it into the right bucket's `<ul>` (by theme, not date), so the reader can read top-to-bottom as a developing argument. Add a new `<h2 class="arc">` bucket only if a genuinely new theme emerges. When any single bucket grows past ~10 essays, or the page gets tall again, graduate to a dedicated `/writing.html` (homepage shows a few recent + "Read all →"); the grouped markup ports straight over.
 
 ## Thinker registry
 

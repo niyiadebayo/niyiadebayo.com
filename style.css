@@ -116,6 +116,24 @@ h2 {
   line-height: 1.5;
 }
 
+/* ── Writing: thematic arc group labels ── */
+#writing .arc {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: color-mix(in srgb, var(--text-muted) 75%, transparent);
+  margin: 1.6rem 0 0.3rem;
+}
+
+#writing .arc:first-child {
+  margin-top: 0;
+}
+
+#writing ul {
+  margin-bottom: 0;
+}
+
 /* ── Lists ── */
 ul {
   list-style: none;
