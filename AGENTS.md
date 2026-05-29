@@ -67,7 +67,7 @@ Body structure:
 </main>
 ```
 
-Body text renders in a **reading serif** (Charter/Georgia system stack; headings stay sans). The `.crumb` shows the essay's position in its arc bucket (e.g. `Systems · 3 of 8`). The `.arc-nav` gives **previous/next in arc order** so the collection reads as one developing argument — the first essay omits `.prev`, the last omits `.next`. All styled in `style.css` under the "Delight" block. Content links animate an underline on hover; footnotes glow via `:target` when jumped to.
+Body text renders in a **reading serif** (Charter/Georgia system stack; headings stay sans). The `.crumb` shows the essay's position in its arc bucket (e.g. `Systems · 3 of 8`); a single-item bucket shows just the name (e.g. `Personal`). The `.arc-nav` gives **previous/next in arc order** so the collection reads as one developing argument — the first essay omits `.prev`, the last omits `.next`. All styled in `style.css` under the "Delight" block. Content links animate an underline on hover; footnotes glow via `:target` when jumped to.
 
 Section headers are short nouns or noun phrases, not sentences. Lowercase-style ("The vault", "The urban ladder", "When the pattern breaks"), not title case.
 

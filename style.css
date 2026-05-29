@@ -1,7 +1,7 @@
 :root {
   --bg: #111;
   --text: #d4d4d4;
-  --text-muted: #777;
+  --text-muted: #8a8a8a;
   --link: #6cb4ee;
 }
 
@@ -333,4 +333,9 @@ article p a:hover { background-size: 100% 1.5px; text-decoration: none; }
   .arc-nav { flex-direction: column; gap: 1.2rem; }
   .arc-nav a { max-width: 100%; }
   .arc-nav .next { margin-left: 0; text-align: left; align-items: flex-start; }
+}
+
+/* Respect reduced-motion: no animated underline / footnote-tint transition */
+@media (prefers-reduced-motion: reduce) {
+  #writing ul li a, article p a, .footnotes li { transition: none; }
 }
