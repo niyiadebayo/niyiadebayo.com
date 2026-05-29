@@ -187,40 +187,25 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ── References footer (press / investments / bookshelf) ── */
+/* ── References footer: Press+Investments | Bookshelf ── */
 .sidebar {
   max-width: 540px;
   margin-top: 3rem;
   padding-top: 1.6rem;
   border-top: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.6rem 2rem;
-  align-content: start;
+  grid-template-columns: 200px 1fr;
+  column-gap: 2.5rem;
+  align-items: start;
 }
 
-.sidebar section {
-  margin-bottom: 0;
-}
-
-.sidebar ul li {
-  padding: 0.15rem 0;
-  font-size: 0.82rem;
-}
-
-.sidebar ul li a {
-  font-size: 0.82rem;
-}
+.sidebar section { margin-bottom: 0; }
+.refs-left section + section { margin-top: 1.6rem; }
 
 /* ── Mobile ── */
 @media (max-width: 700px) {
-  .primary {
-    max-width: 100%;
-  }
-
-  .sidebar {
-    grid-template-columns: 1fr 1fr;
-  }
+  .primary { max-width: 100%; }
+  .sidebar { grid-template-columns: 1fr; row-gap: 1.6rem; }
 }
 
 /* ── Article pages ── */

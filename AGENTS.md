@@ -4,7 +4,7 @@ Operating guide for AI agents (Claude, Codex, any other) working on niyiadebayo.
 
 ## Site in one paragraph
 
-Static site. Pure HTML + one CSS file. No JS framework. Hosted on GitHub Pages from `main`. One HTML file per article. One `index.html`: a single calm column — bio, a "Start here" trio of essays, and a zero-JS `<details class="more">` "Show all essays" toggle that unfolds the rest of the thematic arc; press, investments, and bookshelf sit in a footer row below the writing. Single `style.css` handles dark/light via `prefers-color-scheme`. `feed.xml` (RSS 2.0) and `sitemap.xml` are maintained by hand.
+Static site. Pure HTML + one CSS file. No JS framework. Hosted on GitHub Pages from `main`. One HTML file per article. One `index.html`: a single calm column — bio, a "Start here" trio of essays, and a zero-JS `<details class="more">` "Show all essays" toggle that unfolds the rest of the thematic arc; press, investments, and bookshelf sit in a two-column footer below the writing (press + investments stacked in a narrow left column via `.refs-left`, bookshelf in the wider right column). Single `style.css` handles dark/light via `prefers-color-scheme`. `feed.xml` (RSS 2.0) and `sitemap.xml` are maintained by hand.
 
 ## Author voice (non-negotiable)
 
