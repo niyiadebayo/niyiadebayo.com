@@ -36,12 +36,9 @@ main {
   padding: 3rem 1.5rem 4rem;
 }
 
-/* ── Two-column layout ── */
+/* ── Layout: single column; references sit in a footer below ── */
 .page {
-  display: grid;
-  grid-template-columns: 1fr 240px;
-  gap: 3rem;
-  align-items: start;
+  display: block;
 }
 
 .primary {
@@ -116,10 +113,8 @@ h2 {
   line-height: 1.5;
 }
 
-/* ── Writing: thematic arc grouping ──
-   Mobile-first: bold Title-case sub-heads.
-   Desktop (≥701px): labels move into a right-aligned left gutter (margin index). */
-.arc-group { margin-bottom: 1.6rem; }
+/* ── Writing: arc sub-heads + Start-here + show-all toggle ── */
+.arc-group { margin-bottom: 1.5rem; }
 .arc-group:last-child { margin-bottom: 0; }
 
 #writing .arc {
@@ -132,29 +127,27 @@ h2 {
   line-height: 1.3;
 }
 
-#writing ul {
-  margin-bottom: 0;
-}
+#writing .arc.start { margin: 0 0 0.4rem; }
+#writing ul { margin-bottom: 0; }
 
-@media (min-width: 701px) {
-  .arc-group {
-    display: grid;
-    grid-template-columns: 84px 1fr;
-    column-gap: 1.4rem;
-    align-items: start;
-  }
-
-  #writing .arc {
-    font-size: 0.68rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.09em;
-    color: var(--text-muted);
-    margin: 0;
-    padding-top: 0.4rem;
-    text-align: right;
-  }
+.more { margin-top: 1.6rem; }
+.more > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  user-select: none;
 }
+.more > summary::-webkit-details-marker { display: none; }
+.more > summary::after { content: "\2193"; font-size: 0.85em; line-height: 1; }
+.more[open] > summary::after { content: "\2191"; }
+.more > summary:hover { color: var(--link); }
+.more[open] > summary { margin-bottom: 1.3rem; }
+.more[open] .more-show,
+.more:not([open]) .more-hide { display: none; }
 
 /* ── Lists ── */
 ul {
@@ -194,9 +187,20 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ── Sidebar ── */
+/* ── References footer (press / investments / bookshelf) ── */
 .sidebar {
-  padding-top: 0.2rem;
+  max-width: 540px;
+  margin-top: 3rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.6rem 2rem;
+  align-content: start;
+}
+
+.sidebar section {
+  margin-bottom: 0;
 }
 
 .sidebar ul li {
@@ -208,20 +212,14 @@ a:hover {
   font-size: 0.82rem;
 }
 
-/* ── Mobile: stack ── */
+/* ── Mobile ── */
 @media (max-width: 700px) {
-  .page {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
   .primary {
     max-width: 100%;
   }
 
   .sidebar {
-    border-top: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
-    padding-top: 1.5rem;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
