@@ -5,8 +5,14 @@
     <link>https://niyiadebayo.com</link>
     <description>Writing on cities, marketplaces, and emerging markets.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 27 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://niyiadebayo.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The Boy from Saki</title>
+      <link>https://niyiadebayo.com/boy-from-saki.html</link>
+      <guid>https://niyiadebayo.com/boy-from-saki.html</guid>
+      <description>A town near the Benin border, the factories that cracked the world open, a notice board at Ile-Ife, and the conviction that capability is learnable and self-doubt is fuel.</description>
+    </item>
     <item>
       <title>Rails Before Marketplaces</title>
       <link>https://niyiadebayo.com/rails-before-marketplaces.html</link>

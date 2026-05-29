@@ -28,5 +28,6 @@ This is the standalone reference. The same table is mirrored in `AGENTS.md` (the
 |---|---|---|
 | Nanziri & Mukong | distribution-stack | Social networks as the strongest predictor of mobile-money adoption (Uganda) |
 | Nielsen | distribution-stack | Africans' high trust in personal recommendations / word of mouth |
+| Albert Bandura | boy-from-saki | Mastery experiences are the most durable of the four sources of self-efficacy |
 
 Add a row to the conceptual table whenever a new thinker is cited heavily for the first time. Move a source up from the lower table if it graduates from a one-off footnote to a recurring conceptual anchor.

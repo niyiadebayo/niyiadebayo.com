@@ -124,7 +124,7 @@ The `index.html` writing list is not chronological. It is a thesis arc — order
 2. **Ground level** — first-72-hours, pricing-as-language
 3. **Systems** — second-player, no-float-expected, distribution-stack, identity-premium, financing-loop, informal-stack, inflations-uneven-tax, boring-businesses
 4. **Macro** — entropy-and-marketplaces, rails-before-marketplaces, addis-ababa, leapfrog
-5. **Personal** — know-thyself
+5. **Personal** — boy-from-saki, know-thyself
 
 When adding a new article, slot it into the right bucket's `<ul>` (by theme, not date), so the reader can read top-to-bottom as a developing argument. Add a new `<h2 class="arc">` bucket only if a genuinely new theme emerges. The page is two-column (writing left, references rail right); the full list is what balances the sidebar at full width. A single-column landing, a "Start here" trio, and a same-page `<details>` "show all" toggle were each tried (May 2026) and reverted — the full two-column list is the chosen layout. Revisit only if the list grows unwieldy.
 
