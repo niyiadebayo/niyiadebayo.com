@@ -4,7 +4,7 @@ Operating guide for AI agents (Claude, Codex, any other) working on niyiadebayo.
 
 ## Site in one paragraph
 
-Static site. Pure HTML + one CSS file. No JS framework. Hosted on GitHub Pages from `main`. One HTML file per article. One `index.html`: a single calm column — bio, a "Start here" trio of essays, and a zero-JS `<details class="more">` "Show all essays" toggle that unfolds the rest of the thematic arc; press, investments, and bookshelf sit in a two-column footer below the writing (press + investments stacked in a narrow left column via `.refs-left`, bookshelf in the wider right column). Single `style.css` handles dark/light via `prefers-color-scheme`. `feed.xml` (RSS 2.0) and `sitemap.xml` are maintained by hand.
+Static site. Pure HTML + one CSS file. No JS framework. Hosted on GitHub Pages from `main`. One HTML file per article. One `index.html` (two-column grid: primary column for bio + the full writing list grouped by thematic arc with bold Title-case sub-heads; right-rail sidebar for press, investments, bookshelf). Single `style.css` handles dark/light via `prefers-color-scheme`. `feed.xml` (RSS 2.0) and `sitemap.xml` are maintained by hand.
 
 ## Author voice (non-negotiable)
 
@@ -103,7 +103,7 @@ Every new article, every time:
 4. Data verification pass — every number has a footnote or explicit source.
 5. Cross-links added inside the new essay.
 6. Cross-links added bidirectionally into referenced articles.
-7. Add to `index.html` writing list — slot into the correct bucket (inside the `<details>` toggle for non-Thesis buckets), by theme not date.
+7. Add to `index.html` writing list — slot into the correct bucket's `<ul>` by theme, not date.
 8. Prepend `<item>` to `feed.xml`, update `<lastBuildDate>`.
 9. Add `<url>` to `sitemap.xml`, update homepage `<lastmod>` and new-article `<lastmod>`.
 10. Bookshelf updated in `index.html` if a new thinker is cited heavily.
@@ -111,12 +111,7 @@ Every new article, every time:
 
 ## Thematic arc in the index
 
-The `index.html` writing list is not chronological. It is a thesis arc — ordered so the reader can read top-to-bottom as a developing argument. As of May 2026 the page renders it in two parts:
-
-- **Start here** (always visible, above the toggle): the Thesis bucket, three essays. `<h2 class="arc start">`.
-- **Show all essays**: a zero-JS `<details class="more">` toggle that unfolds the remaining buckets (Ground level → Systems → Macro → Personal) in arc order.
-
-Each bucket is a `.arc-group` with a `<h2 class="arc">` bold Title-case sub-head (styled in `style.css` under "Writing: arc sub-heads + Start-here + show-all toggle"). This replaced an earlier flat `<ul>` and then a faint uppercase-label treatment that didn't read as grouping; the `<details>` toggle keeps the landing short while preserving the full arc one click away.
+The `index.html` writing list is not chronological. It is a thesis arc — ordered so the reader can read top-to-bottom as a developing argument. The full list is shown on the homepage, split into one `.arc-group` per bucket; each bucket's label is a `<h2 class="arc">` **bold Title-case sub-head** (styled in `style.css` under "Writing: thematic arc sub-heads"). This treatment replaced earlier faint uppercase labels that didn't read as grouping.
 
 1. **Thesis** (= "Start here") — cities, density-dividend, the-fiftieth-user
 2. **Ground level** — first-72-hours, pricing-as-language
@@ -124,7 +119,7 @@ Each bucket is a `.arc-group` with a `<h2 class="arc">` bold Title-case sub-head
 4. **Macro** — entropy-and-marketplaces, rails-before-marketplaces, addis-ababa, leapfrog
 5. **Personal** — know-thyself
 
-When adding a new article, slot it into the right bucket — inside the `<details>` for Ground level / Systems / Macro / Personal, or into the visible "Start here" `<ul>` only if it is genuinely a thesis-defining piece. Order by theme, not date. Add a new `<h2 class="arc">` bucket only if a genuinely new theme emerges. The `<details>` toggle keeps the page short as the list grows, so the earlier "graduate to a dedicated /writing.html" plan is no longer needed — revisit only if the *expanded* list itself becomes unwieldy.
+When adding a new article, slot it into the right bucket's `<ul>` (by theme, not date), so the reader can read top-to-bottom as a developing argument. Add a new `<h2 class="arc">` bucket only if a genuinely new theme emerges. The page is two-column (writing left, references rail right); the full list is what balances the sidebar at full width. A single-column landing, a "Start here" trio, and a same-page `<details>` "show all" toggle were each tried (May 2026) and reverted — the full two-column list is the chosen layout. Revisit only if the list grows unwieldy.
 
 ## Thinker registry
 
