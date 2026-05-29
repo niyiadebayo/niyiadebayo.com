@@ -21,6 +21,7 @@ Adeniyi writes like an operator who has been in the markets he describes. Hard r
 9. **Ground anchors:** Lagos, Accra, Dakar, Nairobi, Abidjan, Addis, Lusaka, Kumasi, Kasoa, Prampram, Bolgatanga, Tamale, specific streets, specific prices in local currency. No "emerging markets generally."
 10. **Vehicle and brand vocabulary.** Use globally-recognized brands when they fit: **Bajaj Boxer, Honda, Suzuki** for motorcycles. **Toyota Vitz, Toyota Corolla** for cars. Avoid local-only brands (Apsonic, Haojue) unless the point is specifically about the local commercial stock — and even then, lead with the recognizable brand.
 11. **Vocabulary nits.** *Credit score* (not bureau score). *Farmgate price* (not producer price) for cocoa. *Cedi* lowercase except at sentence start.
+12. **Personal arc reads personable, not operator.** The Personal essays (e.g. boy-from-saki) are memoir, not analysis. Prefer first-person lived detail over generalized takeaways. No paragraph-closing aphorisms (the "and the lesson is…" cap), no product/scale boasts ("the largest super-app on the continent"), no second-person advice ("tear each problem down" should be "I tore each problem down"). When the author hands you raw phrasing ("something I couldn't be scared of", "pushing the envelope on when what is possible"), keep it; do not polish it into operator-speak — that polishing was the exact regression caught on this arc. Footnotes were dropped here at the author's request; cite inline and lightly, if at all.
 
 ## Operator worldview (keep essays coherent with it)
 
