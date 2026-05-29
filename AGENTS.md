@@ -50,7 +50,7 @@ Every article starts with this exact head structure (copy from the most recent a
 Body structure:
 ```
 <main>
-  <p class="back"><a href="/">&larr; Home</a></p>
+  <p class="back"><a href="/">&larr; Home</a><span class="crumb">Bucket &middot; N of M</span></p>
   <article>
     <h1>Title</h1>
     <p>Opening hook — specific, grounded, one or two numbers.</p>
@@ -59,9 +59,15 @@ Body structure:
     ...
     <section class="footnotes"><ol>...</ol></section>
     <div class="share">X, LinkedIn, Copy link buttons</div>
+    <nav class="arc-nav">
+      <a class="prev" href="/PREV.html"><span class="lbl">Previous</span><span class="ttl">Prev title</span></a>
+      <a class="next" href="/NEXT.html"><span class="lbl">Next</span><span class="ttl">Next title</span></a>
+    </nav>
   </article>
 </main>
 ```
+
+Body text renders in a **reading serif** (Charter/Georgia system stack; headings stay sans). The `.crumb` shows the essay's position in its arc bucket (e.g. `Systems · 3 of 8`). The `.arc-nav` gives **previous/next in arc order** so the collection reads as one developing argument — the first essay omits `.prev`, the last omits `.next`. All styled in `style.css` under the "Delight" block. Content links animate an underline on hover; footnotes glow via `:target` when jumped to.
 
 Section headers are short nouns or noun phrases, not sentences. Lowercase-style ("The vault", "The urban ladder", "When the pattern breaks"), not title case.
 
@@ -104,10 +110,11 @@ Every new article, every time:
 5. Cross-links added inside the new essay.
 6. Cross-links added bidirectionally into referenced articles.
 7. Add to `index.html` writing list — slot into the correct bucket's `<ul>` by theme, not date.
-8. Prepend `<item>` to `feed.xml`, update `<lastBuildDate>`.
-9. Add `<url>` to `sitemap.xml`, update homepage `<lastmod>` and new-article `<lastmod>`.
-10. Bookshelf updated in `index.html` if a new thinker is cited heavily.
-11. Commit with a descriptive message. Push.
+8. Wire the new essay's `.crumb` (`Bucket &middot; N of M`) and `.arc-nav`. Adding at the end of the arc: the new essay's `.prev` = the old last essay, and that old last essay gains a `.next` pointing to the new one. Inserting mid-arc: fix both neighbours' nav. First essay has no `.prev`, last has no `.next`. Hand-maintained — there is no generator, so this is easy to forget and the nav will silently rot if you do.
+9. Prepend `<item>` to `feed.xml`, update `<lastBuildDate>`.
+10. Add `<url>` to `sitemap.xml`, update homepage `<lastmod>` and new-article `<lastmod>`.
+11. Bookshelf updated in `index.html` if a new thinker is cited heavily.
+12. Commit with a descriptive message. Push.
 
 ## Thematic arc in the index
 

@@ -281,3 +281,60 @@ sup a {
 }
 
 .share a:hover, .share button:hover { color: var(--link); }
+
+/* ════ Delight: serif body, typographic craft, arc nav, footnote highlight ════ */
+
+/* Reading serif for essay body (system stack — Charter/Georgia, no web font) */
+article p, .footnotes li {
+  font-family: Charter, "Iowan Old Style", "Source Serif 4", Georgia, serif;
+}
+article p { font-size: 1.02rem; line-height: 1.72; }
+
+/* Balanced headings, no widows in body */
+h1, h2 { text-wrap: balance; }
+article p, .bio { text-wrap: pretty; }
+
+/* Animated underline on content links */
+#writing ul li a,
+article p a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease;
+}
+#writing ul li a:hover,
+article p a:hover { background-size: 100% 1.5px; text-decoration: none; }
+
+/* Footnote target highlight (tints the note when you jump to it) */
+.footnotes li { transition: background-color 0.5s ease; border-radius: 4px; }
+.footnotes li:target { background: color-mix(in srgb, var(--link) 14%, transparent); }
+
+/* "Currently" line under the bio */
+.now { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.9rem; }
+.now b { color: var(--text); font-weight: 600; }
+
+/* Essay arc breadcrumb (top, next to "Home") */
+.crumb { color: var(--text-muted); }
+.crumb::before { content: "·"; margin: 0 0.5rem; color: color-mix(in srgb, var(--text-muted) 60%, transparent); }
+
+/* Arc reading navigation (foot of each essay) */
+.arc-nav {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
+  display: flex;
+  gap: 2rem;
+  max-width: 540px;
+}
+.arc-nav a { display: flex; flex-direction: column; gap: 0.25rem; text-decoration: none; max-width: 48%; }
+.arc-nav .next { margin-left: auto; text-align: right; align-items: flex-end; }
+.arc-nav .lbl { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+.arc-nav .ttl { font-size: 0.9rem; color: var(--link); line-height: 1.3; }
+.arc-nav a:hover .ttl { text-decoration: underline; }
+
+@media (max-width: 700px) {
+  .arc-nav { flex-direction: column; gap: 1.2rem; }
+  .arc-nav a { max-width: 100%; }
+  .arc-nav .next { margin-left: 0; text-align: left; align-items: flex-start; }
+}
