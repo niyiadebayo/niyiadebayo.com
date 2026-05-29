@@ -310,10 +310,6 @@ article p a:hover { background-size: 100% 1.5px; text-decoration: none; }
 .footnotes li { transition: background-color 0.5s ease; border-radius: 4px; }
 .footnotes li:target { background: color-mix(in srgb, var(--link) 14%, transparent); }
 
-/* "Currently" line under the bio */
-.now { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.9rem; }
-.now b { color: var(--text); font-weight: 600; }
-
 /* Essay arc breadcrumb (top, next to "Home") */
 .crumb { color: var(--text-muted); }
 .crumb::before { content: "·"; margin: 0 0.5rem; color: color-mix(in srgb, var(--text-muted) 60%, transparent); }
