@@ -102,6 +102,11 @@ Adeniyi's writing lives or dies on numbers.
 
 ## Publishing checklist
 
+**Show the rendered prose inline in the chat before you commit or publish.** The author reviews
+essay text *in the chat as plain text* — not via a styled preview server, and not after it is
+already pushed. Paste the full draft for a read-through and wait for the go-ahead before
+committing. *(Recurring ask: sessions 84c96ff3, a11e7a5b, f47c47f6, 3507c64c.)*
+
 Every new article, every time:
 
 1. Draft via Q&A interview.
