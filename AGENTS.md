@@ -25,6 +25,8 @@ Adeniyi writes like an operator who has been in the markets he describes. Hard r
 
 ## Operator worldview (keep essays coherent with it)
 
+**The through-line:** capital compounds city by city, through necessity rails, informal trust systems, distribution density, and data that makes assets financeable. The convictions below are how that compounding shows up in practice.
+
 Adeniyi writes from a consistent strategic position, stated plainly in how he frames the work publicly (e.g. Bloomberg, May 2026: "a lot of capital chasing the same goal... a race to the bottom"; "we don't work directly with drivers... we work with transport operators"). New essays should reinforce these convictions, not contradict them. Keep the conviction, vary the evidence:
 
 - **Density over headcount; secondary cities over the top four.** Capital piles into Lagos, Cairo, Johannesburg, and Nairobi and bids itself into a race to the bottom. The opening is the secondary cities the top four crowd out. (Primary: cities, density-dividend, second-player.)
@@ -133,6 +135,8 @@ The `index.html` writing list is not chronological. It is a thesis arc — order
 5. **Personal** — boy-from-saki, mr-fabiyi, know-thyself
 
 When adding a new article, slot it into the right bucket's `<ul>` (by theme, not date), so the reader can read top-to-bottom as a developing argument. Add a new `<h2 class="arc">` bucket only if a genuinely new theme emerges. The page is two-column (writing left, references rail right); the full list is what balances the sidebar at full width. A single-column landing, a "Start here" trio, and a same-page `<details>` "show all" toggle were each tried (May 2026) and reverted — the full two-column list is the chosen layout. Revisit only if the list grows unwieldy.
+
+The arc is a reading path, not a feed. Short note-like pieces do not go in it. Either expand the idea into a full essay that earns its slot, or keep it out of the main arc. Nothing thin gets added just to mark that it exists.
 
 ## Thinker registry
 
