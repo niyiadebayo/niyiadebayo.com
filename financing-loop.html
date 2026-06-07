@@ -39,16 +39,55 @@
     <article>
       <h1>The Financing Loop</h1>
       <p>A transport company with 50 vehicles and a spreadsheet cannot get financed. Put those same 50 vehicles on a tech platform (real-time utilization data, revenue per trip, downtime metrics, driver performance scores) and a bank credit committee can underwrite it.</p>
-      <p>This distinction is the entire game in emerging market transport. Trillions of dollars in assets sit across the developing world that cannot function as capital<sup><a href="#fn1" id="ref1">1</a></sup> because <a href="/informal-stack.html">the legal system does not see them</a>. The platform does not formalize those assets. It makes them legible enough for a bank to act.</p>
-      <p>The structure that works has four players. Local transport companies acquire vehicles. Drivers lease to own from those companies. Banks provide the financing. The tech platform (in our case, Yango) provides the data layer that makes the whole thing scoreable. The <a href="/no-float-expected.html">daily cash flows</a> that service those leases run on the same agent-network rails that pay the drivers in the first place.</p>
-      <p>The more vehicles a transport company operates on the platform, the more data accumulates. The more data, the more financeable they become. The more capital the bank deploys, the more vehicles get added. Each vehicle makes the next one easier to finance.</p>
-      <p>In Lusaka, we watched this happen. Transport companies that started with a handful of vehicles scaled to fleets large enough that local banks started competing to finance them. The data made the risk legible. Operational discipline kept default rates low. The loop turned. Transport could anchor that loop because it was the necessity no one could skip, the first marketplace <a href="/rails-before-marketplaces.html">the rails were built to carry</a>.</p>
-      <p>But this loop has two weak points. Both are far from the tech layer.</p>
-      <p>First, the transport company's ground-level operations. The platform can show perfect data. But if the TC cannot stop fuel fraud, cannot enforce collection discipline, cannot prevent the daily leakages that eat margins, the portfolio deteriorates. The bank sees it and pulls back.</p>
-      <p>Second, the bank's own appetite. Even with clean data, risk committees in emerging market banks move slowly and spook easily. A few bad months from one transport company can freeze credit for all of them.</p>
-      <p>Deal architecture in these markets comes down to understanding which part of the chain breaks first and building guardrails there. The tech solves the information problem. The operational problem (collections, fuel, maintenance) requires governance that no dashboard replaces.</p>
-      <p>Get both right and every vehicle added strengthens the entire fleet's position with lenders. Get either wrong and the loop never turns. Capital dries up, vehicles age out, and the marketplace stalls at a scale that cannot sustain itself.</p>
-      <p>The loop works at the company level. It does not yet reach the individual driver trying to buy his first vehicle, which is <a href="/inflations-uneven-tax.html">where the wealth ladder in a soft-currency economy actually breaks</a>. Reaching him takes a different lever, <a href="/identity-premium.html">making his identity expensive enough to underwrite</a>.</p>
+      <p>This distinction is the entire game in emerging market transport. Trillions of dollars in assets sit across the developing world that cannot function as capital<sup><a href="#fn1" id="ref1">1</a></sup> because <a href="/informal-stack.html">the legal system does not see them</a>. The platform makes those assets legible enough for a bank to act without pretending the whole system has become formal.</p>
+
+      <h2>The four players</h2>
+
+      <p>The structure that works has four players. Local transport companies acquire vehicles. Drivers lease to own from those companies. Banks provide the financing. The tech platform provides the data layer that makes the whole thing scoreable. No one player can carry the loop alone.</p>
+
+      <p>The transport company has the local operating muscle: who can drive, who can collect, which mechanic is honest, which route destroys a suspension, which driver is quietly carrying too much debt. The bank has the capital, but not the ground truth. The driver has the labor and the daily need, but rarely the balance sheet. The platform sits between them, measuring the flow of work that all of them used to understand only partially.</p>
+
+      <p>That measurement changes the asset. A vehicle that looked like collateral trapped inside an informal company becomes a performing unit with history. Utilization, revenue per trip, downtime, driver behavior, collection regularity, maintenance gaps. The same car is now visible from two angles: as a machine on the road and as a stream of cash that can be forecast.</p>
+
+      <h2>The data turn</h2>
+
+      <p>The loop starts when the first financed vehicles perform. The more vehicles a transport company operates on the platform, the more data accumulates. The more data, the more financeable the company becomes. The more capital the bank deploys, the more vehicles enter the city. Each vehicle makes the next one easier to finance because it adds another row of evidence.</p>
+
+      <p>This is why transport can become the first serious underwriting rail in a city. The asset works daily. The cash comes daily. The platform sees the pattern daily. A supermarket loan, a school-fee loan, or a consumer appliance loan usually has to infer repayment capacity from thin signals. A vehicle in a marketplace reports its own productive life every few minutes.</p>
+
+      <p>The bank can move beyond a story about demand. It can see where the car moved, how often it earned, when it sat idle, whether the driver worked the hours promised, and whether collections landed. The informal asset remains informal in the legal sense, but it has become legible enough to underwrite.</p>
+
+      <h2>The Lusaka pattern</h2>
+
+      <p>In Lusaka, we watched this happen. Transport companies that started with a handful of vehicles scaled to fleets large enough that local banks started competing to finance them. The data made the risk legible. Operational discipline kept default rates low. The loop turned.</p>
+
+      <p>The city mattered. Lusaka had the kind of supply constraint that capital could solve. Vehicles were expensive enough to block individual drivers, but not structurally impossible to acquire. Demand existed because movement across the city was a necessity. The market did not need a new consumer behavior first. It needed a way to get productive assets into the hands of operators who could keep them working.</p>
+
+      <p>Transport could anchor that loop because it was the necessity no one could skip, the first marketplace <a href="/rails-before-marketplaces.html">the rails were built to carry</a>. A financed car does not wait for discretionary demand. People have to cross the city. The asset earns because the trip happens anyway.</p>
+
+      <h2>The leakages</h2>
+
+      <p>The loop has weak points, and most of them sit far from the app. First, the transport company's ground-level operations. The platform can show clean data. But if the company cannot stop fuel fraud, cannot enforce collection discipline, cannot prevent inflated repair invoices, cannot keep vehicles from being cannibalized, the portfolio deteriorates. The bank sees the deterioration and pulls back.</p>
+
+      <p>Second, the bank's own appetite. Even with good data, risk committees in emerging market banks move slowly and spook easily. One badly governed operator can contaminate the category. A few months of weak collections can turn a fleet-finance thesis into a boardroom cautionary tale.</p>
+
+      <p>Third, the payout rail. The <a href="/no-float-expected.html">daily cash flows</a> that service the leases run through the same agent-network rails that pay the drivers in the first place. Delay the driver, and he starts financing the platform. Delay the transport company, and collections weaken. Delay the bank, and the credit line stops compounding. Settlement cadence is the heartbeat of the loop, not operations trivia.</p>
+
+      <h2>The deal architecture</h2>
+
+      <p>Deal architecture in these markets comes down to understanding which part of the chain breaks first and building guardrails there. The tech solves the information problem. It does not solve governance. Collections, fuel, maintenance, driver churn, spare-parts leakage, insurance, repossession, and local politics all sit outside the dashboard until someone designs the operating rules around them.</p>
+
+      <p>A good fleet-finance structure therefore starts with the ugliest questions. Who holds the vehicle title? Who controls daily collections? Who approves maintenance? What happens after three missed payments? How quickly can a vehicle be redeployed? Which operator is allowed to grow, and which one is held at ten cars until the discipline is proven?</p>
+
+      <p>These questions sound small compared with the size of the capital pool. They decide whether the pool survives contact with the city. In a soft-currency economy, a vehicle is both a productive asset and a savings instrument. Mismanage the operating layer and that asset decays into the old taxi stock the platform was supposed to improve.</p>
+
+      <h2>The missing rung</h2>
+
+      <p>Get the loop right and every vehicle added strengthens the entire fleet's position with lenders. Get it wrong and the capital dries up, vehicles age out, and the marketplace stalls at a scale that cannot sustain itself.</p>
+
+      <p>The loop works at the company level. It does not yet reach the individual driver trying to buy his first vehicle, which is <a href="/inflations-uneven-tax.html">where the wealth ladder in a soft-currency economy actually breaks</a>. The company can become legible because the fleet produces enough data to underwrite. The driver still sits below the threshold. He works daily, pays daily, proves himself daily, and still has no asset history a bank can price.</p>
+
+      <p>Reaching him takes a different lever: <a href="/identity-premium.html">making his identity expensive enough to underwrite</a>. The platform has to turn daily behavior into a durable credit identity without asking the driver to become someone the formal system already recognizes. That is the next loop. The first one starts with the fleet, because the fleet is where the data is dense enough for capital to trust.</p>
 
       <section class="footnotes">
         <ol>
