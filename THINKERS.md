@@ -21,6 +21,7 @@ This is the standalone reference. The same table is mirrored in `AGENTS.md` (the
 | Kingsley Davis | the-fiftieth-user | Urban transition; the attenuated S-curve |
 | Gollin, Jedwab & Vollrath | the-fiftieth-user | Consumption vs production cities; urbanization without industrialization |
 | Carlota Perez | rails-before-marketplaces | Each technological revolution installs its infrastructure before the deployment era; the "installation" phase precedes the "golden age" of applications |
+| Christopher Alexander | the-compounding-corner | Activity nodes (Pattern 30): scattered facilities do nothing for a city until clustered into nodes; semilattice vs tree ("A City Is Not a Tree") |
 
 ## Other named sources cited (footnote-level, not conceptual anchors)
 
