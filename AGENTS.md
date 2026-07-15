@@ -39,7 +39,7 @@ His public register is blunt and operator-first ("we've barely started"), the sa
 
 ## Article HTML template
 
-Every article starts with this exact head structure (copy from the most recent article — currently `inflations-uneven-tax.html`):
+Every article starts with this exact head structure (copy from the most recent article — currently `the-compounding-corner.html`):
 
 - `<title>` = "Article Name — Adeniyi Adebayo"
 - `<meta description>` = ~25 words, hook-oriented
@@ -119,7 +119,7 @@ Every new article, every time:
 6. Cross-links added bidirectionally into referenced articles.
 7. Add to `index.html` writing list — slot into the correct bucket's `<ul>` by theme, not date.
 8. Wire the new essay's `.crumb` (`Bucket &middot; N of M`) and `.arc-nav`. Adding at the end of the arc: the new essay's `.prev` = the old last essay, and that old last essay gains a `.next` pointing to the new one. Inserting mid-arc: fix both neighbours' nav. First essay has no `.prev`, last has no `.next`. Hand-maintained — there is no generator, so this is easy to forget and the nav will silently rot if you do.
-9. Prepend `<item>` to `feed.xml`, update `<lastBuildDate>`.
+9. Prepend `<item>` to `feed.xml` with `<title>`, `<link>`, `<guid>`, `<pubDate>`, `<description>`, and update `<lastBuildDate>` to match. The `<pubDate>` is RFC-822 (`Sun, 21 Jun 2026 00:00:00 +0000`) and must equal the JSON-LD `datePublished` in the article's head — those two are the only publication dates on the site, and readers order the feed by `pubDate`. Omitting it silently breaks feed ordering (every item was missing one until July 2026).
 10. Add `<url>` to `sitemap.xml`, update homepage `<lastmod>` and new-article `<lastmod>`.
 11. Bookshelf updated in `index.html` if a new thinker is cited heavily.
 12. Commit with a descriptive message. Push.
@@ -175,7 +175,7 @@ Before starting a new essay session:
 
 - **Preview server:** macOS App Sandbox prevents Claude Preview's python3 from accessing `~/Documents`. The author opens files directly in a browser or runs a server from their terminal.
 - **Headshot path:** Uses absolute `/headshot.jpg`. Does not render from `file://` URLs, works on GitHub Pages.
-- **No JS framework:** Site is pure HTML/CSS with no interactivity to speak of. Two small scripts only: the one-line Copy Link button on each article, and the cookieless **Cloudflare Web Analytics** beacon on every page (`data-cf-beacon` token `2859…1538`). Traffic is read at dash.cloudflare.com &rarr; Web Analytics &rarr; niyiadebayo.com (visits, page views, per-article top-path hits, referrers). It is JS-based so it undercounts script/ad-blocked visitors, and GitHub Pages exposes no server logs. Do not add further JS.
+- **No JS framework:** Site is pure HTML/CSS with no interactivity to speak of. Two small scripts only: the one-line Copy Link button on each article, and the cookieless **Cloudflare Web Analytics** beacon on every page (`data-cf-beacon` token `769bf8adc2c4487188b82059b27f0419`). Traffic is read at dash.cloudflare.com &rarr; Web Analytics &rarr; niyiadebayo.com (visits, page views, per-article top-path hits, referrers). It is JS-based so it undercounts script/ad-blocked visitors, and GitHub Pages exposes no server logs. Do not add further JS.
 - **No auto-build:** `feed.xml` and `sitemap.xml` are hand-maintained. There is no generator.
 - **Share row must wrap:** The `.share` footer (X / LinkedIn / Copy link) is a flexbox and must keep `flex-wrap: wrap`. Without it the row fits at &ge;360px but the third button overflows the right edge on the smallest phones (&le;~340px, e.g. the original iPhone SE). Verified at 320px after the fix: it drops to a second line cleanly. The style is shared across every article footer, so test footer width at 320px when touching `.share`.
 
