@@ -91,6 +91,7 @@ h1 {
   font-size: 0.82rem;
   color: var(--text-muted);
   text-decoration: none;
+  padding: 0.25rem 0;
 }
 
 .links a:hover {
@@ -226,8 +227,6 @@ article h2 {
 }
 
 article p {
-  font-size: 0.95rem;
-  line-height: 1.75;
   margin-bottom: 1rem;
   max-width: 540px;
 }
@@ -277,7 +276,7 @@ sup a {
   border: none;
   cursor: pointer;
   font-family: inherit;
-  padding: 0;
+  padding: 0.35rem 0;
 }
 
 .share a:hover, .share button:hover { color: var(--link); }
@@ -308,7 +307,7 @@ article p a:hover { background-size: 100% 1.5px; text-decoration: none; }
 
 /* Footnote target highlight (tints the note when you jump to it) */
 .footnotes li { transition: background-color 0.5s ease; border-radius: 4px; }
-.footnotes li:target { background: color-mix(in srgb, var(--link) 14%, transparent); }
+.footnotes li:target { background: color-mix(in srgb, var(--link) 14%, transparent); color: var(--text); }
 
 /* Essay arc breadcrumb (top, next to "Home") */
 .crumb { color: var(--text-muted); }
