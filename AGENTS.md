@@ -129,7 +129,7 @@ Every new article, every time:
 The `index.html` writing list is not chronological. It is a thesis arc — ordered so the reader can read top-to-bottom as a developing argument. The full list is shown on the homepage, split into one `.arc-group` per bucket; each bucket's label is a `<h2 class="arc">` **bold Title-case sub-head** (styled in `style.css` under "Writing: thematic arc sub-heads"). This treatment replaced earlier faint uppercase labels that didn't read as grouping.
 
 1. **Thesis** (= "Start here") — cities, density-dividend, the-compounding-corner, the-fiftieth-user
-2. **Ground level** — first-72-hours, pricing-as-language
+2. **Ground level** — first-72-hours, pricing-as-language, castles-in-the-air
 3. **Systems** — second-player, no-float-expected, distribution-stack, identity-premium, financing-loop, informal-stack, inflations-uneven-tax, boring-businesses
 4. **Macro** — entropy-and-marketplaces, rails-before-marketplaces, addis-ababa, leapfrog
 5. **Personal** — boy-from-saki, mr-fabiyi, know-thyself
