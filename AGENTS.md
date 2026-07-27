@@ -23,6 +23,45 @@ Adeniyi writes like an operator who has been in the markets he describes. Hard r
 11. **Vocabulary nits.** *Credit score* (not bureau score). *Farmgate price* (not producer price) for cocoa. *Cedi* lowercase except at sentence start.
 12. **Personal arc reads personable, not operator.** The Personal essays (e.g. boy-from-saki) are memoir, not analysis. Prefer first-person lived detail over generalized takeaways. No paragraph-closing aphorisms (the "and the lesson is…" cap), no product/scale boasts ("the largest super-app on the continent"), no second-person advice ("tear each problem down" should be "I tore each problem down"). When the author hands you raw phrasing ("something I couldn't be scared of", "pushing the envelope on when what is possible"), keep it; do not polish it into operator-speak — that polishing was the exact regression caught on this arc. Footnotes were dropped here at the author's request; cite inline and lightly, if at all.
 
+## Spoken register (the press corpus)
+
+When the prose reads stiff or "too AI", the ground truth is how he actually talks. Work from these
+verbatim press quotes rather than inventing a style direction. Collected 2026-07-27 from Bloomberg
+(via News24), Forbes Colombia, CNBC Africa and TechCabal, all May–June 2026.
+
+- "What that creates is a lot of capital chasing the same goal in all of these markets, and you've got a race to the bottom."
+- "We don't work directly with drivers in any of our markets. We work with transport operators."
+- "There is a fundamental belief, and this is actually very personal to me, that cities are the engines of growth on the continent."
+- "If you look at the top 50 cities across West Africa and look at how many of those cities we've covered, we've barely started."
+- "Everyone told us we arrived late to the party." / "But Bolivia proved them wrong. The market received us with open arms."
+- "Imagine you put your car in the taxi fleet and each night you receive an exact report of what happened. You know the mileage, the trips completed and the money generated."
+- "Why should only people in Bogotá or Lima have access to fast digital services? People in Cartagena or Arequipa deserve it too."
+- "If it were up to me, we would be in all Latin American countries." / "A lot. A lot of money."
+- "By building ride hailing business, we build entrepreneurs."
+
+**Devices to lift:** contractions; a rhetorical question then its answer; a mid-sentence personal
+aside ("and this is actually very personal to me"); an objection stated then rebutted; a long setup
+collapsing into a short punch ("we've barely started"); a second-person "imagine you…" walkthrough
+of a mechanism. **"We" for the work, "I/me" for conviction.**
+
+**Contractions — measure, don't guess.** Every essay here is contraction-free *except*
+`the-compounding-corner`, the most recent, at **6.2 per 1k words**. Target roughly 6–8 per 1k;
+that is where the writing is already heading, not an import from broadcast. Convert only
+conversational asides and direct address, never the measured analytical sentences. A blanket regex
+pass on castles hit 20 per 1k and introduced three grammar errors ("somewhere like *that's* to try",
+"the more credible *he's* as a builder", "with all of *it's* a higher ceiling") — re-read every hit
+in context. Possessives (`city's`, `drivers'`) are not contractions; do not let a counter conflate them.
+
+**Not a voice model:** the ITWeb Africa answers are written PR ("Public-private collaboration is
+essential") and read nothing like him. He sometimes refers to that outlet as "ITV"; no actual ITV
+interview appears to exist.
+
+**Named specifics are the missing half.** What makes `the-compounding-corner` feel alive is Avenida
+La Mar, La Red working the street since 1981, Carmencita's nightly anticucho cart, 314,241 against
+99,337. `castles-in-the-air` ships with only the 50,007 cap and the pico y placa hours — no street,
+company, year, or person named. No style pass substitutes for this. **Ask him for the details; never
+invent them.**
+
 ## Operator worldview (keep essays coherent with it)
 
 **The through-line:** capital compounds city by city, through necessity rails, informal trust systems, distribution density, and data that makes assets financeable. The convictions below are how that compounding shows up in practice.
