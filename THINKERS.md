@@ -2,7 +2,7 @@
 
 Reference list of thinkers cited across the essays. Purpose: **avoid re-citing.** When a thinker appears in more than one essay, state the finding (and the number) in the **primary** essay and reference lightly elsewhere, linking back. The full version of a shared stat lives in the primary.
 
-This is the standalone reference. The same table is mirrored in `AGENTS.md` (the in-writing quick list, where the "avoid re-citing" rule is enforced); keep the two in sync, and update both in the commit that first cites a new thinker.
+This is the single canonical registry — `AGENTS.md` enforces the "avoid re-citing" rule and links here rather than mirroring the table (the mirror had drifted and was consolidated 2026-08-10). Update this file in the commit that first cites a new thinker.
 
 ## Conceptual anchors
 

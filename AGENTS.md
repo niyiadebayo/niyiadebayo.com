@@ -182,24 +182,7 @@ The arc is a reading path, not a feed. Short note-like pieces do not go in it. E
 
 Avoid re-citing. When a thinker appears in more than one article, state the finding in the primary and link/reference lightly in others.
 
-| Thinker | Primary article | Concept |
-|---|---|---|
-| Geoffrey West | density-dividend | Superlinear 1.15 exponent |
-| Edward Glaeser | density-dividend | 30% wage premium, 50% urbanization threshold |
-| Jane Jacobs | density-dividend | Four conditions, import replacement, "new work" |
-| Hernando de Soto | informal-stack | $9.3T dead capital, 289-day registration |
-| James Scott | informal-stack | Metis, thin simplifications, legibility |
-| Acemoglu & Robinson | informal-stack | Extractive vs inclusive institutions |
-| Thomas Piketty | inflations-uneven-tax | r > g amplified by FX + urbanization in EMs |
-| Marcel Fafchamps | distribution-stack | Relational contracting, <5% use courts in SSA |
-| Jack & Suri | distribution-stack | Nonlinear agent density and M-PESA adoption |
-| W. Brian Arthur | identity-premium | Increasing returns, lock-in, path dependence |
-| Kingsley Davis | the-fiftieth-user | Urban transition, attenuated S-curve |
-| Gollin, Jedwab & Vollrath | the-fiftieth-user | Consumption vs production cities, urbanization without industrialization |
-| Carlota Perez | rails-before-marketplaces | Installation of infrastructure precedes the deployment era of applications |
-| Christopher Alexander | the-compounding-corner | Activity nodes (Pattern 30); semilattice vs tree |
-
-Add a row here whenever a new thinker is cited heavily for the first time.
+The registry itself lives in **`THINKERS.md`** — thinker → primary essay → key finding, plus the secondary Source table. Consult it before citing; add a row there in the commit that first cites a new thinker heavily. (One canonical copy — the table used to be mirrored here and had already drifted.)
 
 ## Session kickoff protocol
 
