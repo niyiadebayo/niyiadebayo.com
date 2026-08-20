@@ -14,6 +14,7 @@ This is the single canonical registry — `AGENTS.md` enforces the "avoid re-cit
 | Hernando de Soto | informal-stack | $9.3T of dead capital; 289-day registration |
 | James Scott | informal-stack | Metis; thin simplifications; legibility |
 | Acemoglu & Robinson | informal-stack | Extractive vs inclusive institutions |
+| Acemoglu & Johnson | the-expensive-electron | *Power and Progress*: technology does not distribute its own gains; direction is an institutional choice |
 | Thomas Piketty | inflations-uneven-tax | r > g, amplified by FX and urbanization in emerging markets |
 | Marcel Fafchamps | distribution-stack | Relational contracting; under 5% of sub-Saharan firms use courts |
 | Jack & Suri | distribution-stack | Nonlinear agent density and M-PESA adoption |
