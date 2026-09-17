@@ -199,7 +199,16 @@ Before starting a new essay session:
 - **Preview server:** macOS App Sandbox prevents Claude Preview's python3 from accessing `~/Documents`. The author opens files directly in a browser or runs a server from their terminal.
 - **Headshot path:** Uses absolute `/headshot.jpg`. Does not render from `file://` URLs, works on GitHub Pages.
 - **No JS framework:** Site is pure HTML/CSS with no interactivity to speak of. Two small scripts only: the one-line Copy Link button on each article, and the cookieless **Cloudflare Web Analytics** beacon on every page (`data-cf-beacon` token `769bf8adc2c4487188b82059b27f0419`). Traffic is read at dash.cloudflare.com &rarr; Web Analytics &rarr; niyiadebayo.com (visits, page views, per-article top-path hits, referrers). It is JS-based so it undercounts script/ad-blocked visitors, and GitHub Pages exposes no server logs. Do not add further JS.
-- **No auto-build:** `feed.xml` and `sitemap.xml` are hand-maintained. There is no generator.
+- **Page template (`build.py`), added 2026-08-20.** The `<head>` SEO block, share row, arc-nav and
+  analytics beacon used to be copy-pasted across 24 files, so any structural change was a 24-file edit.
+  `build.py` now holds one copy. `extract()` parses a page into its variable fields plus body;
+  `render()` builds the page back. **`python3 build.py --check` asserts `render(extract(page)) == page`
+  byte-for-byte for every essay, and must stay at 23/23 (or N/N) before any commit that touches page
+  structure.** This is a repo-side tool only: it emits plain HTML committed to the repo and served by
+  GitHub Pages exactly as before, so the no-framework and no-client-JS rules are untouched. Change the
+  chrome in `build.py`, never in 24 files.
+- **Still hand-maintained:** `feed.xml` and `sitemap.xml`. `build.py` does not touch them, and the
+  publishing checklist below still applies in full.
 - **Share row must wrap:** The `.share` footer (X / LinkedIn / Copy link) is a flexbox and must keep `flex-wrap: wrap`. Without it the row fits at &ge;360px but the third button overflows the right edge on the smallest phones (&le;~340px, e.g. the original iPhone SE). Verified at 320px after the fix: it drops to a second line cleanly. The style is shared across every article footer, so test footer width at 320px when touching `.share`.
 
 ## Updating this file
