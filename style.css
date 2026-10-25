@@ -86,6 +86,7 @@ main {
 .headshot {
   width: 48px;
   height: 48px;
+  border-radius: 50%; /* round by the author's choice: the one exception to square corners */
   object-fit: cover;
   margin-bottom: 0.6rem;
 }
