@@ -38,7 +38,8 @@ def extract(html):
     body_start = html.index("</h1>") + len("</h1>")
     if html[body_start] == "\n":
         body_start += 1
-    body_end = html.index('      <div class="share">')
+    marker = '      <form class="follow"' if '      <form class="follow"' in html else '      <div class="share">'
+    body_end = html.index(marker)
     prev = re.search(r'<a class="prev" href="([^"]+)"><span class="lbl">Previous</span>'
                      r'<span class="ttl">(.*?)</span></a>', html)
     nxt = re.search(r'<a class="next" href="([^"]+)"><span class="lbl">Next</span>'
@@ -65,6 +66,11 @@ def extract(html):
         "next": (nxt.group(1), nxt.group(2)) if nxt else None,
         "body": html[body_start:body_end],
     }
+
+
+# Follow by email (Buttondown, plain form, no script). Replace BUTTONDOWN_USERNAME
+# with the account's username before publishing.
+FOLLOW = ""  # switched off until the Buttondown account exists; the form markup is in git history (site finish commit)
 
 
 def render(m):
@@ -118,6 +124,7 @@ def render(m):
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="Adeniyi Adebayo" href="/feed.xml">
+  <link rel="preload" href="/fonts/source-serif-4-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -125,7 +132,7 @@ def render(m):
     <p class="back"><a href="/">&larr; Home</a><span class="crumb">{m['crumb']}</span></p>
     <article>
       <h1>{m['h1']}</h1>
-{m['body']}      <div class="share">
+{m['body']}{FOLLOW}      <div class="share">
         <a href="https://x.com/intent/tweet?url={url}&text={m['share_text']}" target="_blank" rel="noopener">Share on X</a>
         <a href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noopener">Share on LinkedIn</a>
         <button onclick="navigator.clipboard.writeText('{url}');this.textContent='Copied';setTimeout(()=>this.textContent='Copy link',2000)">Copy link</button>

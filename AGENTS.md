@@ -101,6 +101,7 @@ Body structure:
     <h2>Section header</h2>
     ...
     <section class="footnotes"><ol>...</ol></section>
+    <!-- follow form: off until the Buttondown account exists; restore FOLLOW in build.py from the site-finish commit and set the username -->
     <div class="share">X, LinkedIn, Copy link buttons</div>
     <nav class="arc-nav">
       <a class="prev" href="/PREV.html"><span class="lbl">Previous</span><span class="ttl">Prev title</span></a>
@@ -110,7 +111,7 @@ Body structure:
 </main>
 ```
 
-Body text renders in a **reading serif** (Charter/Georgia system stack; headings stay sans). The `.crumb` shows the essay's position in its arc bucket (e.g. `Systems · 3 of 8`); a single-item bucket shows just the name (e.g. `Personal`). The `.arc-nav` gives **previous/next in arc order** so the collection reads as one developing argument — the first essay omits `.prev`, the last omits `.next`. All styled in `style.css` under the "Delight" block. Content links animate an underline on hover; footnotes glow via `:target` when jumped to.
+Body text renders in **Source Serif 4** and everything else in **Archivo**, both self-hosted in `/fonts` (they carry Yoruba marks such as Ṣakí and Ọ̀yọ́). Colours come from the author's design language: white with ink text and ultramarine links by day, yard brown `#3A2416` with stone text in dark mode; the Asabari Hill mark sits beside his name on the home page and is the favicon. Layout is unchanged by design: the author likes it. The `.crumb` shows the essay's position in its arc bucket (e.g. `Systems · 3 of 8`); a single-item bucket shows just the name (e.g. `Personal`). The `.arc-nav` gives **previous/next in arc order** so the collection reads as one developing argument — the first essay omits `.prev`, the last omits `.next`. All styled in `style.css` under the "Delight" block. Content links animate an underline on hover; footnotes glow via `:target` when jumped to.
 
 Section headers are short nouns or noun phrases, not sentences. Lowercase-style ("The vault", "The urban ladder", "When the pattern breaks"), not title case.
 
@@ -203,7 +204,7 @@ Before starting a new essay session:
   analytics beacon used to be copy-pasted across 24 files, so any structural change was a 24-file edit.
   `build.py` now holds one copy. `extract()` parses a page into its variable fields plus body;
   `render()` builds the page back. **`python3 build.py --check` asserts `render(extract(page)) == page`
-  byte-for-byte for every essay, and must stay at 23/23 (or N/N) before any commit that touches page
+  byte-for-byte for every essay, and must stay at 24/24 (or N/N) before any commit that touches page
   structure.** This is a repo-side tool only: it emits plain HTML committed to the repo and served by
   GitHub Pages exactly as before, so the no-framework and no-client-JS rules are untouched. Change the
   chrome in `build.py`, never in 24 files.
