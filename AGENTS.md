@@ -4,7 +4,14 @@ Operating guide for AI agents (Claude, Codex, any other) working on niyiadebayo.
 
 ## Site in one paragraph
 
-Static site. Pure HTML + one CSS file. No JS framework. Hosted on GitHub Pages from `main`. One HTML file per article. One `index.html` (two-column grid: primary column for bio + the full writing list grouped by thematic arc with bold Title-case sub-heads; right-rail sidebar for press, investments, bookshelf). Single `style.css` handles dark/light via `prefers-color-scheme`. `feed.xml` (RSS 2.0) and `sitemap.xml` are maintained by hand.
+Static site. Pure HTML + one CSS file. No JS framework. Hosted on GitHub Pages from `main`. One HTML file per article. One `index.html` (two-column grid: primary column for bio + the full writing list grouped by thematic arc with bold Title-case sub-heads; right-rail sidebar for press, building with others, bookshelf). Single `style.css` handles dark/light via `prefers-color-scheme`. `feed.xml` (RSS 2.0) and `sitemap.xml` are maintained by hand.
+
+## Who he is on the site (agreed October 2026)
+
+- **Titles:** CEO, Yango Ridetech, and Chief Business Officer, Yango Group. Both appear in the home `<title>`, the meta, OG and Twitter descriptions, and the JSON-LD `jobTitle`. Change them together.
+- **Bio:** two short paragraphs: Ṣakí, curiosity, the two titles; then investing in tech businesses in emerging markets, Venture Partner at Starta VC, and Asabari's scholars from Òkè-Ògùn. Kept short on purpose; the author cut longer versions.
+- **Left out on purpose:** advisory board roles, the Yango Ventures investment committee, and the "first seven people" detail.
+- **Building with others** (right rail): Geeklama (founder), ProctorEdu (co-founder), Starta VC (venture partner), VarsityScape and Llama Energy (investor). Real roles only.
 
 ## Author voice (non-negotiable)
 
