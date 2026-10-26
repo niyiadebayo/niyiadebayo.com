@@ -271,6 +271,10 @@ article p {
   max-width: 540px;
 }
 
+/* Charts inside essays: full article width, tap to open the full image */
+article figure.chart { margin: 1.6rem 0 2rem; }
+article figure.chart img { display: block; width: 100%; height: auto; border-radius: 4px; }
+
 /* ── Footnotes ── */
 sup { line-height: 0; }
 sup a {

@@ -120,6 +120,8 @@ Body structure:
 
 Body text renders in **Source Serif 4** and everything else in **Archivo**, both self-hosted in `/fonts` (they carry Yoruba marks such as Ṣakí and Ọ̀yọ́). Colours come from the author's design language: white with ink text and ultramarine links by day, yard brown `#3A2416` with stone text in dark mode; the Asabari Hill mark sits beside his name on the home page and is the favicon. Layout is unchanged by design: the author likes it. The `.crumb` shows the essay's position in its arc bucket (e.g. `Systems · 3 of 8`); a single-item bucket shows just the name (e.g. `Personal`). The `.arc-nav` gives **previous/next in arc order** so the collection reads as one developing argument — the first essay omits `.prev`, the last omits `.next`. All styled in `style.css` under the "Delight" block. Content links animate an underline on hover; footnotes glow via `:target` when jumped to.
 
+**Charts in essays (from October 2026):** a chart sits after the paragraph it supports as `<figure class="chart"><a href="/IMG"><img src="/IMG" alt="..." loading="lazy" width height></a></figure>`, full article width, linked to the full image for phones. Images live at the repo root as `<slug>-N.png` at 1600px wide, drawn in Archivo with the site colours (sources in the footnotes and on the chart). First used in the-agent-and-the-house-help.
+
 Section headers are short nouns or noun phrases, not sentences. Lowercase-style ("The vault", "The urban ladder", "When the pattern breaks"), not title case.
 
 ## Q&A interview process
@@ -179,7 +181,7 @@ The `index.html` writing list is not chronological. It is a thesis arc — order
 1. **Thesis** (= "Start here") — cities, density-dividend, the-compounding-corner, the-fiftieth-user
 2. **Ground level** — first-72-hours, pricing-as-language, castles-in-the-air
 3. **Systems** — second-player, no-float-expected, distribution-stack, identity-premium, financing-loop, informal-stack, inflations-uneven-tax, boring-businesses
-4. **Macro** — entropy-and-marketplaces, rails-before-marketplaces, addis-ababa, leapfrog, the-expensive-electron, within-proximity
+4. **Macro** — entropy-and-marketplaces, rails-before-marketplaces, addis-ababa, leapfrog, the-expensive-electron, within-proximity, the-agent-and-the-house-help
 5. **Personal** — boy-from-saki, mr-fabiyi, know-thyself
 
 When adding a new article, slot it into the right bucket's `<ul>` (by theme, not date), so the reader can read top-to-bottom as a developing argument. Add a new `<h2 class="arc">` bucket only if a genuinely new theme emerges. The page is two-column (writing left, references rail right); the full list is what balances the sidebar at full width. A single-column landing, a "Start here" trio, and a same-page `<details>` "show all" toggle were each tried (May 2026) and reverted — the full two-column list is the chosen layout. Revisit only if the list grows unwieldy.
