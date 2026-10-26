@@ -9,7 +9,8 @@ Static site. Pure HTML + one CSS file. No JS framework. Hosted on GitHub Pages f
 ## Who he is on the site (agreed October 2026)
 
 - **Titles:** CEO, Yango Ridetech, and Chief Business Officer, Yango Group. Both appear in the home `<title>`, the meta, OG and Twitter descriptions, and the JSON-LD `jobTitle`. Change them together.
-- **Bio:** two short paragraphs: Ṣakí, curiosity, the two titles; then investing in tech businesses in emerging markets, Venture Partner at Starta VC, and Asabari's scholars from Òkè-Ògùn. Kept short on purpose; the author cut longer versions.
+- **Definite article in prose:** "the CEO of Yango Ridetech and the Chief Business Officer at Yango Group" (the author's preferred form, October 2026). The `<title>` and JSON-LD `jobTitle` stay as label lists.
+- **Bio:** two short paragraphs: Ṣakí, curiosity, the two titles; then investing in tech businesses in emerging markets, Venture Partner at Starta VC, and Asabari's scholars from Òkè-Ògùn (Asabari links to https://asabari.com). Kept short on purpose; the author cut longer versions.
 - **Left out on purpose:** advisory board roles, the Yango Ventures investment committee, and the "first seven people" detail.
 - **Building with others** (right rail): Geeklama (founder), ProctorEdu (co-founder), Starta VC (venture partner), VarsityScape and Llama Energy (investor). Real roles only.
 
