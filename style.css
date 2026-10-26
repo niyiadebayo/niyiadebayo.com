@@ -279,7 +279,12 @@ article figure.chart .chart-title { font-weight: 600; font-size: 0.85rem; line-h
 article figure.chart img { display: block; width: 100%; height: auto; }
 article figure.chart figcaption { font-size: 0.72rem; line-height: 1.5; color: var(--text-muted); margin-top: 0.6rem; }
 @media (min-width: 900px) {
-  article figure.chart { float: right; clear: right; width: calc(100% - 540px - 2.5rem); max-width: none; margin: 0.35rem 0 1.5rem; }
+  /* Wrapped, newspaper style: the chart floats right, half inside the 540px
+     text column and half out in the margin; text runs around its left side
+     and returns to full width below it. Scoped with :has() so a browser
+     without it simply keeps the charts inline. */
+  article:has(> figure.chart) { max-width: 540px; }
+  article:has(> figure.chart) > figure.chart { float: right; clear: right; width: 300px; max-width: none; margin: 0.4rem -170px 1.1rem 1.6rem; }
 }
 .footnotes { clear: both; }
 
