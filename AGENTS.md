@@ -177,7 +177,7 @@ Every new article, every time:
 
 ## Thematic arc in the index
 
-The `index.html` writing list is not chronological. It is a thesis arc — ordered so the reader can read top-to-bottom as a developing argument. The full list is shown on the homepage, split into one `.arc-group` per bucket; each bucket's label is a `<h2 class="arc">` **bold Title-case sub-head** (styled in `style.css` under "Writing: thematic arc sub-heads"). This treatment replaced earlier faint uppercase labels that didn't read as grouping.
+The `index.html` writing list is not chronological. It is a thesis arc — ordered so the reader can read top-to-bottom as a developing argument. The full list is shown on the homepage, split into one `.arc-group` per bucket; each bucket's label is a `<h2 class="arc">` **bold Title-case sub-head** (styled in `style.css` under "Writing: thematic arc sub-heads"). This treatment replaced earlier faint uppercase labels that didn't read as grouping. **Three steps of emphasis, in both light and dark (November 2026):** bucket sub-heads at 700 weight in text colour, essay titles at 600 in green, taglines and sidebar roles at 400 in `--quiet` grey. Green titles and the old muted-grey taglines sat at the same tone and blended, so taglines must stay a clear step lighter (light) or dimmer (dark) than the green.
 
 1. **Thesis** (= "Start here") — cities, density-dividend, the-compounding-corner, the-fiftieth-user
 2. **Ground level** — first-72-hours, pricing-as-language, castles-in-the-air

@@ -38,6 +38,7 @@
   --text-muted: #5a615c;/* 6.4:1 */
   --link: #2a5e08;      /* deep field green, 7.8:1 */
   --hill: #33700a;      /* field green, 6.1:1 */
+  --quiet: #737873;     /* taglines and roles, 4.5:1: a step back from the green titles */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +48,7 @@
     --text-muted: #a8a197;/* 7.0:1 */
     --link: #9ccc7a;      /* field green lifted, 9.6:1 */
     --hill: #a3d67f;      /* field tint */
+    --quiet: #8a8378;     /* taglines and roles, 4.7:1 */
   }
 }
 
@@ -161,8 +163,8 @@ h2 {
 .arc-group:last-child { margin-bottom: 0; }
 
 #writing .arc {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1.05rem;
+  font-weight: 700;  /* stays a step above the 600-weight titles */
   text-transform: none;
   letter-spacing: 0;
   color: var(--text);
@@ -195,15 +197,18 @@ ul li a:hover {
 }
 
 .desc {
-  color: var(--text-muted);
+  color: var(--quiet);
   font-size: 0.8rem;
 }
+
+/* Titles lead, taglines step back (Nov 2026: in green they had blended) */
+#writing ul li a, .sidebar ul li a { font-weight: 600; }
 
 .desc::before {
   content: "— ";
 }
 
-.role { color: var(--text-muted); }
+.role { color: var(--quiet); }
 .bio.boards { margin-top: -1.6rem; margin-bottom: 2.5rem; }
 
 a {
