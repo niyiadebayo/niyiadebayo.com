@@ -97,7 +97,7 @@ def render(m):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{m['title']} — Adeniyi Adebayo</title>
   <meta name="description" content="{m['description']}">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
   <link rel="canonical" href="{url}">
   <meta property="og:title" content="{m['og_title']}">
   <meta property="og:description" content="{m['og_description']}">
