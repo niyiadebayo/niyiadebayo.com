@@ -29,13 +29,13 @@
 
 /* Colours from the Adeniyi Adebayo design language.
    By day: white, savanna ink, ultramarine links. At night (device dark mode):
-   yard brown, the family yard's red earth at dusk, with stone text. */
+   tobacco, the yard at dusk (the brown of worn work canvas), with stone text. */
 :root {
-  --bg: #3a2416;          /* yard brown */
-  --text: #e8e2d7;        /* stone for reading, 11.3:1 */
-  --text-muted: #b8b4ac;  /* 7.0:1 */
-  --link: #a9bcff;        /* ultramarine lifted for the dark, 7.8:1 */
-  --hill: #a3d67f;        /* field tint */
+  --bg: #5c4126;          /* tobacco */
+  --text: #e8e2d7;        /* stone for reading, 7.3:1 */
+  --text-muted: #b8b4ac;  /* 4.5:1: the lightest grey that passes on tobacco */
+  --link: #a9bcff;        /* ultramarine lifted for the dark, 5.0:1 */
+  --hill: #a3d67f;        /* field tint, 5.6:1 */
 }
 
 @media (prefers-color-scheme: light) {
